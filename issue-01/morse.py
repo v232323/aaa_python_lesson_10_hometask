@@ -32,6 +32,10 @@ def encode(message: str) -> str:
     '... --- ...'
     >>> encode('AAAAA') #doctest: +ELLIPSIS
     '.-....-'
+    >>> encode(5) #doctest: +ELLIPSIS
+    Traceback (most recent call last):
+        ...
+    TypeError: 'int' object is not iterable
     """
     encoded_signs = [
         LETTER_TO_MORSE[letter] for letter in message
