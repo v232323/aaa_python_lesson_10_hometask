@@ -36,7 +36,7 @@ class TestFT(unittest.TestCase):
 
     def test_tf_in(self):
         """
-        Тест проверяет функцию fit_transform на массиве из 2-х городов на true
+        Тест проверяет функцию fit_transform на массиве из 2-х городов на вхождение
         """
         actual = fit_transform(['Moscow', 'Kiev'])
         expected = ('Moscow', [0, 1])
